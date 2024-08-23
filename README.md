@@ -77,7 +77,7 @@ Este proyecto es un sistema de gestión de productos que permite administrar pro
 
 Aquí se incluye un enlace al diagrama de clases UML que ilustra las relaciones entre las clases del sistema:
 
-![Diagrama UML](C:\Users\Encli\Downloads\DIAGRAMA/DiagramaUML.PNG)
+![Diagrama de Clases](imagenes/diagrama_clases.png)
 
 ## Autor
 
