@@ -73,15 +73,9 @@ Este proyecto es un sistema de gestión de productos que permite administrar pro
 
 3. Para acceder a la ruta de productos, ve a `http://127.0.0.1:5000/productos`.
 
-## Diagrama de Clases
-
-Aquí se incluye un enlace al diagrama de clases UML que ilustra las relaciones entre las clases del sistema:
-
-![Diagrama de Clases](imagenes/DiagramaUML.png)
-
 ## Autor
 
-Tu Nombre
+Enzo Gonzalez Caicedo
 
 ## Licencia
 
