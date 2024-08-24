@@ -5,12 +5,8 @@ class BodegaProducto:
         self.cantidad = cantidad
         self.fecha_entrada = fecha_entrada
 
-    def registrarentrada(self, cantidad, fecha_entrada):
-        self.cantidad += cantidad
-        self.fecha_entrada = fecha_entrada
+    def registrar_entrada(self):
+        pass
 
-    def registrarsalida(self, cantidad):
-        if cantidad <= self.cantidad:
-            self.cantidad -= cantidad
-        else:
-            raise ValueError("No hay suficiente stock para retirar.")
+    def registrar_salida(self):
+        pass

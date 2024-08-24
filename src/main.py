@@ -8,7 +8,6 @@ from Claseproveedorproducto import ProveedorProducto
 
 console = Console()
 
-# Simulación de bases de datos en memoria
 productos = {}
 categorias = {}
 proveedores = {}
