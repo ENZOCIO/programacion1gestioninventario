@@ -4,10 +4,8 @@ class ProveedorProducto:
         self.producto_id = producto_id
         self.fecha_suministro = fecha_suministro
 
-    @staticmethod
-    def registrarsuministro(proveedor_id, producto_id, fecha_suministro):
-        return ProveedorProducto(proveedor_id, producto_id, fecha_suministro)
+    def registrar_suministro(self):
+        pass
 
-    @staticmethod
-    def listasuministrosporproveedor(proveedor_id, suministros):
-        return [s for s in suministros if s.proveedor_id == proveedor_id]
+    def lista_suministros_por_proveedor(self, proveedor_id):
+        pass

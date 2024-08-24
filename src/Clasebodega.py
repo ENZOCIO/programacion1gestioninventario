@@ -6,29 +6,21 @@ class Bodega:
         self.capacidad_maxima = capacidad_maxima
         self.productos = []
 
-    def agregarproducto(self, producto, cantidad):
-        if self.capacidad_disponible() >= cantidad:
-            self.productos.append((producto, cantidad))
+    def agregar_producto(self, bodega_producto):
+        total_stock = sum([bp.cantidad for bp in self.productos])
+        if total_stock + bodega_producto.cantidad <= self.capacidad_maxima:
+            self.productos.append(bodega_producto)
         else:
-            raise ValueError("No hay suficiente capacidad en la bodega.")
+            raise ValueError("No hay suficiente espacio en la bodega")
 
-    def retirarproducto(self, producto, cantidad):
-        for p in self.productos:
-            if p[0] == producto:
-                if p[1] >= cantidad:
-                    p[1] -= cantidad
-                    if p[1] == 0:
-                        self.productos.remove(p)
-                else:
-                    raise ValueError("No hay suficiente stock del producto en la bodega.")
-                break
+    def retirar_producto(self, bodega_producto):
+        if bodega_producto in self.productos:
+            self.productos.remove(bodega_producto)
+        else:
+            raise ValueError("El producto no se encuentra en la bodega")
 
-    def consultarstock(self):
-        return {p[0]: p[1] for p in self.productos}
+    def consultar_stock(self):
+        return {bp.producto_id: bp.cantidad for bp in self.productos}
 
-    def listaproductos(self):
-        return [(p[0].nombre, p[1]) for p in self.productos]
-
-    def capacidad_disponible(self):
-        ocupada = sum([p[1] for p in self.productos])
-        return self.capacidad_maxima - ocupada
+    def lista_productos(self):
+        return self.productos

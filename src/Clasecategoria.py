@@ -5,17 +5,11 @@ class Categoria:
         self.descripcion = descripcion
         self.productos = []
 
-    def agregarproducto(self, producto):
-        if producto not in self.productos:
-            self.productos.append(producto)
-        else:
-            print(f"El producto {producto.nombre} ya está en esta categoría.")
+    def agregar_producto(self, producto):
+        self.productos.append(producto)
 
-    def eliminarproducto(self, producto):
-        if producto in self.productos:
-            self.productos.remove(producto)
-        else:
-            print(f"El producto {producto.nombre} no está en esta categoría.")
+    def eliminar_producto(self, producto):
+        self.productos.remove(producto)
 
-    def listaproductos(self):
-        return [p.nombre for p in self.productos]
+    def lista_productos(self):
+        return self.productos
