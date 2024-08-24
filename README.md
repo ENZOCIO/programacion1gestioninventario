@@ -53,12 +53,12 @@ Este proyecto es un sistema de gestión de productos que permite administrar pro
 
 ## Estructura del Proyecto
 
-- `producto.py`: Definición de la clase `Producto`.
-- `categoria.py`: Definición de la clase `Categoria`.
-- `bodega.py`: Definición de la clase `Bodega`.
-- `bodega_producto.py`: Definición de la clase `BodegaProducto`.
-- `proveedor.py`: Definición de la clase `Proveedor`.
-- `proveedor_producto.py`: Definición de la clase `ProveedorProducto`.
+- `Claseproducto.py`: Definición de la clase `Producto`.
+- `Clasecategoria.py`: Definición de la clase `Categoria`.
+- `Clasebodega.py`: Definición de la clase `Bodega`.
+- `Clasebodegaproducto.py`: Definición de la clase `BodegaProducto`.
+- `Claseproveedor.py`: Definición de la clase `Proveedor`.
+- `Claseproveedorproducto.py`: Definición de la clase `ProveedorProducto`.
 - `main.py`: Punto de entrada de la aplicación Flask.
 
 ## Uso
